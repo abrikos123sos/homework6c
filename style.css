@@ -1,26 +1,43 @@
-.rang {
-    display: block;
-    position: relative;
-    width: 78px;
-    height: 78px;
-    border-bottom: 4px solid red;
+table.CHESS {
+    border-collapse: collapse;
 }
 
-.star {
-    display: inline-block;
-    width: 78px;
-    height: 78px;
-    background: url(star0.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 1s ease-in-out;
-    cursor: pointer;
+table.CHESS td {
+    width: 50px;
+    height: 50px;
+    border: solid gray 1px;
 }
 
-.stars:hover>.star {
-    background-image: url(star1.png);
+.CHESS tr:nth-child(even) td:nth-child(even) {
+    background-color: black;
 }
 
-.star:hover~.star {
-    background-image: url(star0.png);
+.CHESS tr:nth-child(odd) td:nth-child(odd) {
+    background-color: black;
+}
+
+.CHESS td:first-child {
+    width: 5%;
+    background-color: #90EE90 !important;
+}
+
+.CHESS td:last-child {
+    width: 5%;
+    background-color: #90EE90 !important;
+}
+
+.CHESS tr:first-child {
+    height: 5%;
+    background-color: #90EE90;
+}
+
+.CHESS tr:last-child {
+    height: 5%;
+    background-color: #90EE90 !important;
+}
+
+th {
+    height: 20px;
+    border: 1px solid gray;
+    background-color: #90EE90;
 }
