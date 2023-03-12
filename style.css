@@ -1,0 +1,80 @@
+#sposob1 ul {
+    margin: 0;
+    padding: 10px;
+}
+
+il {
+    display: inline-block;
+    margin-right: 10px;
+    border: 0px solid red;
+    padding: 20px;
+}
+
+[href="#"] {
+    box-shadow: 1px 1px 2px blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:after {
+    background-color: red;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0px;
+    transition: width .3s ease-in-out;
+}
+
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
+
+a:hover {
+    text-shadow: 2px 2px 3px black;
+    color: red;
+    font-size: 20px;
+}
+
+il:nth-child(1n+1) {
+    border-right: 4px solid red;
+}
+
+#sposob2 {
+    margin: 0;
+    padding: 10px;
+}
+
+th {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 30px;
+    height: 20px;
+    border-right: 4px solid purple;
+}
+
+#sposob3 {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#sposob3 div {
+    margin-right: 20px;
+    width: 160px;
+    border-right: 4px solid red;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+    margin-top: 20px;
+    width: 160px;
+    margin-right: 20px;
+    border-right: 4px solid red;
+    height: 40px;
+    text-align: center;
+}
